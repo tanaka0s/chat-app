@@ -17,13 +17,13 @@
         <div class="post-text">おはよう</div>
       </div>
     </div>
-    <div class="chat-form">
-      <div class="message-form">
-        <input class="message" placeholder="type a message">
-        <label class="form-image">
-          <span class="image-file">画像</span>
-          <input type="file" class="hidden">
-        </label>
-      </div>  
-      <input type="submit" value="送信" class="send">
-    </div>
+<%= form_with model: [@room, @message], class: 'chat-form', local: true do |f| %>
+  <div class="message-form">
+    <%= f.text_field :content, class: 'message', placeholder: 'type a message' %>
+    <label class="form-image">
+      <span class="image-file">画像</span>
+      <%= f.file_field :image, class: 'hidden' %>
+    </label>
+  </div>
+  <%= f.submit '送信', class: 'send' %>
+<% end %>
