@@ -85,27 +85,6 @@
   overflow: scroll;
 }
 
-.post {
-  margin-bottom: 40px;
-}
-
-.post-name {
-  font-size: 16px;
-  color: #434A54;
-  margin: 10px 0;
-}
-
-.post-name span {
-  margin-left: 10px;
-  font-size: 12px;
-  color: #999;
-}
-
-.post-text {
-  font-size: 14px;
-  color: #434A54;
-}
-
 .chat-form {
   height: 90px;
   background-color: #DDDDDD;
@@ -119,7 +98,7 @@
   display: flex;
 }
 
-.message {
+.form-message {
   border: none;
   height: 50px;
   width: 100%;
@@ -148,4 +127,35 @@
 
 .hidden {
   display: none;
+}
+
+
+
+.message {
+  margin: 10px 0 0 0;
+}
+
+.upper-message{
+  display: flex;
+}
+
+.message-user {
+  color: #434a54;
+  font-size: 16px;
+}
+
+.message-date {
+  color: #999;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.lower-message {
+  margin-top: 10px;
+}
+
+.message-content {
+  color: #434a54;
+  font-size: 14px;
+  margin-bottom: 40px;
 }
